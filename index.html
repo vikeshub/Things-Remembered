@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- topbar start -->
+    <div class="topbar">
+      <div class="topbar-content">
+        <p>Welcome! Enjoy Free Shipping over $99</p>
+      </div>
+    </div>
+    <!-- topbar start -->
+
+    <!-- Tophead Start -->
+    <div class=" header-section">
+        <div class=" align-items-center justify-content-between custom-container">
+        
+        <!-- Search Bar -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="search-bar position-relative">
+            <input type="text" class="form-control search-input" placeholder="Search for your perfect gift">
+            <button type="submit" class="search-button">
+                <img src="/images/search-icon-teal.webp" alt="Search" class="icon-size">
+            </button>
+            </div>
+        </div>
+    
+        <!-- Logo -->
+        <div class="col-lg-4 col-md-12 text-center">
+            <div class="logo">
+            <a href="https://www.thingsremembered.com/">
+                <img src="/images/Logo.webp" alt="Logo" class="logo-size">
+            </a>
+            </div>
+        </div>
+    
+        <!-- Account and Cart Info -->
+        <div class="col-lg-4 col-md-6 col-sm-12 account-info">
+            <!-- Need Help Dropdown -->
+            <div class="dropdown need-help-dropdown">
+                <a href="#" class="dropdown-link need-help">Need Help?</a>
+                <ul class="dropdown-content">
+                    <li><a href="#"><img src="/images/faq-icon-pale-aqua.webp" alt="FAQ"> FAQ's</a></li>
+                    <li><a href="#"><img src="/images/order-status-pale-aqua.webp" alt="Order Status"> Order Status</a></li>
+                    <li><a href="#"><img src="/images/email-icon-pale-aqua.webp" alt="Email Us"> Email Us</a></li>
+                    <li><a href="#"><img src="/images/phone-icon-pale-aqua.webp" alt="Phone"> 1-866-516-8474</a></li>
+                </ul>
+            </div> |
+    
+            <!-- My Account Dropdown -->
+            <div class="dropdown account-dropdown">
+            <a href="#" class="dropdown-link">
+                <img src="/images/tr-profile-icon-pale-aqua.png" alt="My Account" class="icon-size"> My Account (Sign In)
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">New Customer? Start here</a></li>
+                <li><a href="#">Order Status</a></li>
+            </ul>
+            </div> |
+    
+            <!-- Cart Info Dropdown -->
+            <div class="dropdown cart-dropdown">
+            <a href="#" class="dropdown-link">
+                <img src="/images/tr-cart-icon-pale.png" alt="Cart" class="icon-size"> 0 Items
+            </a>
+            <ul class="dropdown-content cart-content">
+                <li><p>Your shopping cart is empty, start shopping :)</p></li>
+                <li><button class="signin-button">Sign In To View Saved Items</button></li>
+            </ul>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <!-- Tophead End -->
+  
+
+    <!-- Navbar start -->
+    <nav class="custom-navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+        <ul class="nav-items" id="navItems">
+            <!-- Occasions Dropdown -->
+            <li class="nav-item">
+                <a href="#" class="nav-link">Occasions &#9662;</a>
+                <div class="nav-dropdown-content occasions-dropdown ">
+                    <div class="occasions-container">
+                        <!-- Upcoming Occasions -->
+                        <div class="occasion-block col-md-3">
+                            <div class="occasion-header">Upcoming Occasions</div>
+                            <ul class="occasion-list occasion-list-item">
+                                <li class="icon-occasion">
+                                    <div class="occ-calendar-date">
+                                        <div class="month">OCT</div>
+                                        <div class="date">31</div>
+                                    </div>
+                                    Halloween
+                                </li>
+                                <li>Fall Entertaining</li>
+                                <li>Holiday</li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Milestone Occasions -->
+                        <div class="occasion-block col-md-6">
+                            <div class="occasion-header">Milestone Occasions</div>
+                            <div class=" occasion-block-content">
+                                <div class="col-md-6">
+                                    <ul class="occasion-list">
+                                        <li>Wedding</li>
+                                        <li>Anniversary</li>
+                                        <li>Engagement</li>
+                                        <li>Birthday</li>
+                                        <li>Religious</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="occasion-list">
+                                        <li>Wedding</li>
+                                        <li>Anniversary</li>
+                                        <li>Engagement</li>
+                                        <li>Birthday</li>
+                                        <li>Religious</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Seasonal Occasions -->
+                        <div class="occasion-block col-md-3">
+                            <div class="occasion-header">Seasonal Occasions</div>
+                            <ul class="occasion-list">
+                                <li>Valentine's Day</li>
+                                <li>Mother's Day</li>
+                                <li>Father's Day</li>
+                                <li>Back to School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Recipients Dropdown -->
+            <li class="nav-item">
+                <a href="#" class="nav-link">Recipients &#9662;</a>
+                <div class="nav-dropdown-content">
+                    <div class="shop-container">
+                        <!-- Left Navigation -->
+                        <div class="left-nav">
+                            <h3>Shop By Recipients</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">For Her</a>
+                                    <!-- Right Content Area (Dropdown Items) -->
+                                    <div class="right-content for-her-right">
+                                        <div class="shop-dropdown-content">
+                                            <div>
+                                                <h4>For Her</h4>
+                                                <div class="for-her-content">
+                                                    <div class="for-her-list">
+                                                        <div class="for-her-ul">
+                                                            <ul>
+                                                                <li>Best Sellers</li>
+                                                                <li>Grandma</li>
+                                                                <li>Friend</li>
+                                                                <li>Accessories</li>
+                                                                <li>Home Décor</li>
+                                                                <li>Entertaining</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="for-her-ul"> 
+                                                            <ul>
+                                                                <li>Mom</li>
+                                                                <li>Wife</li>
+                                                                <li>Jewelry</li>
+                                                                <li>Snow Globes & Keepsakes</li>
+                                                                <li>Picture Frames</li>
+                                                                <li>Interests & Hobbies</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <!-- Product Examples -->
+                                                <div class="products ">
+                                                   <div class="product">
+                                                       <img src="/images/for_her_img1.webp" alt="Engraved Necklace">
+                                                       <p>Engraved Gold Over Sterling Silver Vertical Cube Necklace</p>
+                                                       <p><strong>$100.00</strong></p>
+                                                   </div>
+                                                   <div class="product">
+                                                       <img src="/images/for_her_img2.webp" alt="Leather Beauty Case">
+                                                       <p>Engraved Small Cream Leather Beauty Case</p>
+                                                       <p><strong>$70.00</strong></p>
+                                                   </div>
+                                               </div>
+
+                                           </div>
+                                        </div>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <a href="#">For Him</a>
+                                        <div class="right-content for-him-right">
+                                            <div class="shop-dropdown-content">
+                                                <div>
+                                                    <h4>For Him</h4>
+                                                    <div class="for-her-content">
+                                                        <div class="for-her-list">
+                                                            <div class="for-her-ul">
+                                                                <ul>
+                                                                    <li>Best Sellers</li>
+                                                                    <li>Grandma</li>
+                                                                    <li>Friend</li>
+                                                                    <li>Accessories</li>
+                                                                    <li>Home Décor</li>
+                                                                    <li>Entertaining</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="for-her-ul"> 
+                                                                <ul>
+                                                                    <li>Mom</li>
+                                                                    <li>Wife</li>
+                                                                    <li>Jewelry</li>
+                                                                    <li>Snow Globes & Keepsakes</li>
+                                                                    <li>Picture Frames</li>
+                                                                    <li>Interests & Hobbies</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <!-- Product Examples -->
+                                                    <div class="products ">
+                                                    <div class="product">
+                                                        <img src="/images/for_him_img1.webp" alt="Engraved Necklace">
+                                                        <p>Engraved Gold Over Sterling Silver Vertical Cube Necklace</p>
+                                                        <p><strong>$100.00</strong></p>
+                                                    </div>
+                                                    <div class="product">
+                                                        <img src="/images/for_him_img2.webp" alt="Leather Beauty Case">
+                                                        <p>Engraved Small Cream Leather Beauty Case</p>
+                                                        <p><strong>$70.00</strong></p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li><a href="#">For the Wedding Couple</a></li>
+                                <li><a href="#">For the Family</a></li>
+                                <li><a href="#">For Baby & Kids</a></li>
+                                <li><a href="#">For the Office / Professional</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </li>
+            <!-- Products Dropdown -->
+            <li class="nav-item">
+                <a href="#" class="nav-link">Products &#9662;</a>
+                <div class="nav-dropdown-content product-dropdown">
+                    <div class="inner-content">
+                        <div class="product-content-left">
+                            <h3><a href="#">Shop By Product</a></h3>
+                            <div class="product-ul"> 
+                                <ul>
+                                    <li>Accessories</li>
+                                    <li>Baby & Kids Items</li>
+                                    <li>Best Sellers</li>
+                                    <li>Brands We Love</li>
+                                    <li>Clocks</li>
+                                    <li>Corporate & Group Events</li>
+                                    <li>Desk & Accessories</li>
+                                </ul>
+                                <ul>
+                                    <li>Drinkware</li>
+                                    <li>Home Décor</li>
+                                    <li>Interests & Hobbies</li>
+                                    <li>Jewelry</li>
+                                    <li>New Arrivals</li>
+                                    <li>Pens & Writing</li>
+                                    <li>Picture Frames</li>
+                                </ul>
+                                <ul>
+                                    <li>Recognition/Awards</li>
+                                    <li>Religious Items</li>
+                                    <li>Snow Globes</li>
+                                    <li>Vases</li>
+                                    <li>Wedding Items</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content-right">
+                            <h3>Personalized Gifts from Things Remembered</h3>
+                            <div>
+                                <ul class="gift-ul">
+                                    <li>
+                                        <div class="gift-div">
+                                            <img src="/images/product_bag.webp" alt="Accessories">
+                                            <span>Accessories</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gift-div">
+                                            <img src="/images/product_tree.webp" alt="Baby & Kids Items">
+                                            <span>Baby & Kids Items</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </li>
+            <!-- Other Menu Items -->
+            <li class="nav-item"><a href="#" class="nav-link">Halloween</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Wedding</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Brands We Love</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">For Her</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">For Him</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">For Baby & Kids</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">For Office & Professional</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sale</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Body1 Start-->
+     <div class="home-body"> 
+        <div class="body1">
+            <a href="#">
+                <img src="/images/body1.webp" alt="">
+            </a>
+         </div>
+     </div>
+    <!-- Body1 End-->
+
+    <!-- Body2 Start-->
+    <div class="home-body-container"> 
+            <div class="body2">
+                <h2>
+                    THE BEST OF <strong>PERSONALIZED ENTERTAINING</strong>
+                </h2>
+                <div class="body2-container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/images/body2_img1.webp" alt="">
+                                <p>FOR THE BAR</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/body2_img2.webp" alt="">
+                                <p>FOR THE TABLE</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/body2_img3.webp" alt="">
+                                <p>FOR THE HOME</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/body2_img4.webp" alt="">
+                                <p>FOR THE HOST</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+    </div>
+    <!-- Body2 End-->
+
+    <!-- Body3 start -->
+    <div class="home-body-container">
+        <div class="body3-inner-container">
+            <ul>
+                <li>
+                    <p class="body3-title">FALL <strong>WEEDING</strong></p>
+                    <a class="body3-button" href="">SHOP WEEDING</a>
+                    <img src="/images/body3_img1.webp" alt="">
+                </li>
+                <li>
+                    <p class="body3-title"><strong>NEW </strong>ARRIVALS</p>
+                    <a class="body3-button" href="">SHOP NEW ARRIVALS</a>
+                    <img src="/images/body3_img2.webp" alt="">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Body3 end -->
+
+    <!-- Body4 Start -->
+    <div class="collection-column">
+        <div class="collection-link">
+            <a href="">
+                <img src="/images/body4_img1.webp" alt="">
+                <p>Drinkware</p>
+            </a>
+        </div>
+        <div class="collection-link">
+            <a href="">
+                <img src="/images/body4_img2.webp" alt="">
+                <p>Snow Globes</p>
+            </a>
+        </div>
+        <div class="collection-link">
+            <a href="">
+                <img src="/images/body4_img3.webp" alt="">
+                <p>Wedding</p>
+            </a>
+        </div>
+        <div class="collection-link">
+            <a href="">
+                <img src="/images/body4_img4.webp" alt="">
+                <p>Jewelry</p>
+            </a>
+        </div>
+        <div class="collection-link">
+            <a href="">
+                <img src="/images/body4_img5.webp" alt="">
+                <p>Frames</p>
+            </a>
+        </div>
+        <div class="collection-link">
+            <a href="">
+                <img src="/images/body4_img6.webp" alt="">
+                <p>Baby & Kids</p>
+            </a>
+        </div>
+    </div>
+    <!-- Body4 End -->
+
+    <!-- Body5 start -->
+     <div class="home-body-container">
+        <div class="right-wrapper">
+            <div class="flex-column-2">
+                <div class="left-col">
+                    <img src="/images/body5_img1.webp" alt="">
+                </div>
+                <div class="right-col">
+                    <a href="#">
+                        <div class="content-wrapper">
+                            <p>BRANDS WE <strong>LOVE</strong></p>
+                            <p class="faux-link">SHOP NAME</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="left-wrapper">
+            <div class="flex-column-2">
+                <div class="right-col holiday-content">
+                    <a href="#">
+                        <div class="content-wrapper">
+                            <p><strong>HOLIDAY</strong> EARLY ARRIVALS</p>
+                            <p class="faux-link">SHOP HOLIDAY</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="left-col">
+                    <img src="/images/body5_img2.webp" alt="">
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Body5 End -->
+
+    <!-- Body6 Start -->
+    <div class="home-center-container">
+        <div class="inner-center-container">
+            <div class="home-center-header">
+                <h1>Personalized Gifts Recommended For You:</h1>
+            </div>
+            <div class="home-center-content">
+                <ul>
+                    <li>
+                        <div class="home-product-container">
+                            <div>
+                                <a href=""><img src="/images/body6_img1.webp" alt=""></a>
+                            </div>
+                            <div class="product-description">
+                                <a href=""><p>Vera Wang Engraved Crystal Leaf Vase for Weddings & Anniversaries</p></a>
+                            </div>
+                            <div class="product-price">$165.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home-product-container">
+                            <div>
+                                <a href=""><img src="/images/body6_img1.webp" alt=""></a>
+                            </div>
+                            <div class="product-description">
+                                <a href=""><p>Vera Wang Engraved Crystal Leaf Vase for Weddings & Anniversaries</p></a>
+                            </div>
+                            <div class="product-price">$165.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home-product-container">
+                            <div>
+                                <a href=""><img src="/images/body6_img1.webp" alt=""></a>
+                            </div>
+                            <div class="product-description">
+                                <a href=""><p>Vera Wang Engraved Crystal Leaf Vase for Weddings & Anniversaries</p></a>
+                            </div>
+                            <div class="product-price">$165.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home-product-container">
+                            <div>
+                                <a href=""><img src="/images/body6_img1.webp" alt=""></a>
+                            </div>
+                            <div class="product-description">
+                                <a href=""><p>Vera Wang Engraved Crystal Leaf Vase for Weddings & Anniversaries</p></a>
+                            </div>
+                            <div class="product-price">$165.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home-product-container">
+                            <div>
+                                <a href=""><img src="/images/body6_img1.webp" alt=""></a>
+                            </div>
+                            <div class="product-description">
+                                <a href=""><p>Vera Wang Engraved Crystal Leaf Vase for Weddings & Anniversaries</p></a>
+                            </div>
+                            <div class="product-price">$165.00</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Body6 End -->
+
+    <!-- Body7 start -->
+    <div class="home-center-container">
+        <div class="home-content">
+            <div class="home-feature-header">
+                <h2>Personalized Gifts For Every Special Occasion</h2>
+            </div>
+            <div class="shop-list">
+                <div class="shop-occasion-list">
+                    <ul>
+                        <li><h4><a href="#">Upcoming Occasions</a></h4></li>
+                        <li><a href="#">Halloween</a></li>
+                        <li><a href="#">Fall Entertaining</a></li>
+                        <li><a href="#">Holiday</a></li>
+
+                        <li><h4><a href="#">Milestone Occasions</a></h4></li>
+                        <li><a href="#">Wedding</a></li>
+                        <li><a href="#">Anniversary</a></li>
+                        <li><a href="#">Engagement</a></li>
+                        <li><a href="#">Birthday</a></li>
+                        <li><a href="#">Religious</a></li>
+                        <li><a href="#">Memorial/Sympathy</a></li>
+                        <li><a href="#">Retirement</a></li>
+                        <li><a href="#">New Baby</a></li>
+                        <li><a href="#">Housewarming</a></li>
+                        <li><a href="#">Graduation</a></li>
+                    </ul>
+                    <ul class="shop-occasion-list-ul-2">
+                        <li><h4><a href="#">Seasonal Occasions</a></h4></li>
+                        <li><a href="#">Valentine's Day</a></li>
+                        <li><a href="#">Mother's Day</a></li>
+                        <li><a href="#">Father's Day</a></li>
+                        <li><a href="#">Back to School</a></li>
+                    </ul>
+                </div>
+                <div class="shop-recipients-list">
+                    
+                    <ul>
+                        <li><h4><a href="#">Recipients</a></h4></li>
+                        <li><a href="#">For Her</a></li>
+                        <li><a href="#">For Him</a></li>
+                        <li><a href="#">For the Wedding Couple</a></li>
+                        <li><a href="#">For the Family</a></li>
+                        <li><a href="#">For Baby & Kids</a></li>
+                        <li><a href="#">For the Office / Professional</a></li>
+                    </ul>
+                </div>
+                <div class="shop-products-list">
+                    <h4><a href="#">Products</a></h4>
+                    <div class="product-ul">
+                        <ul>
+                            <li></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Baby & Kids Items</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Brands We Love</a></li>
+                            <li><a href="#">Clocks</a></li>
+                            <li><a href="#">Corporate & Group Events</a></li>
+                            <li><a href="#">Desk & Accessories</a></li>
+                            <li><a href="#">Drinkware</a></li>
+                            <li><a href="#">Home Décor</a></li>
+                            <li><a href="#">Interests & Hobbies</a></li>
+    
+                            
+                        </ul>
+                        <ul>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Pens & Writing</a></li>
+                            <li><a href="#">Picture Frames</a></li>
+                            <li><a href="#">Recognition/Awards</a></li>
+                            <li><a href="#">Religious Items</a></li>
+                            <li><a href="#">Snow Globes</a></li>
+                            <li><a href="#">Vases</a></li>
+                            <li><a href="#">Wedding Items</a></li>
+                            <li><a href="#">Corporate Gifts</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    <!-- Body8 End -->
+
+    <!-- Social Media Content start -->
+    <div class="home-center-container">
+        <div class="home-content-social">
+            <p>Connect With Us!</p>
+            <a href=""><img src="/images/instagram-inverse-icon.webp" alt=""></a>
+            <a href=""><img src="/images/facebook-icon.webp" alt=""></a>
+            <a href=""><img src="/images/pinterest-icon.webp" alt=""></a>
+        </div>
+    </div>
+    <!-- Social Media Content End -->
+
+    <!-- back to top start -->
+    <div class="back-to-top">
+        <a href="#top" id="backToTopBtn">Back To Top <img src="/images/to_top2.webp" alt=""></a>
+    </div>
+    <!-- back to top end -->
+
+    <!-- Footer-top Start -->
+     <div class="footer-top">
+        <div class="footer-top-content">
+            <div class="join">
+                <label for="">Sign Up and Save 15% OFF</label>
+                <button class="join-btn">Get 15% OFF</button>
+                <div class="offer-msg">
+                    <span>Your Order When You Sign Up!</span>
+                    <a href="">Privacy Notice</a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+     </div>
+    <!-- Footer-top end -->
+
+
+
+
+
+
+
+
+
+    <h1 style="height: 120vh;">Things Remebered</h1>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
