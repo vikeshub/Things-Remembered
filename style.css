@@ -1287,7 +1287,7 @@ body {
 }
 .footer-main ul {
   float: left;
-  width: auto;
+  width: -moz-available;
   text-align: left;
   list-style: none;
   margin: 20px 15px;
