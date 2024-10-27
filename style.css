@@ -1,10 +1,10 @@
-body {
-  font-family: "Lato", sans-serif;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
 }
 .row > * {
   padding-right: 0px !important;
@@ -14,12 +14,8 @@ body {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
-
 .topbar {
   background-color: #9fc5d3;
-  /* max-width: none !important;
-  width: 100%;
-  min-width: 1200px; */
   position: relative;
   height: 36px;
 }
@@ -35,7 +31,6 @@ body {
   font-size: 15px;
   line-height: 2;
   font-family: "Red Hat Display", sans-serif, Arial;
-  width: max-content;
   margin-left: auto;
   margin-right: auto;
   font-weight: 300;
@@ -48,12 +43,10 @@ body {
   margin: 0 auto;
   background-color: #fff;
 }
-
 .custom-container {
   padding: 30px 0 20px 0;
   display: flex;
 }
-
 /* Search Bar */
 .search-bar {
   position: relative;
@@ -69,10 +62,9 @@ body {
   font-family: "Red Hat Display", sans-serif;
   text-indent: 12px;
 }
-.form-control{
+.form-control {
   width: 90% !important;
 }
-
 .search-button {
   position: absolute;
   top: 50%;
@@ -82,17 +74,14 @@ body {
   border: none;
   cursor: pointer;
 }
-
 .icon-size {
   width: 20px;
   height: 20px;
 }
-
 /* Logo */
 .logo-size {
   width: 300px;
 }
-
 /* Account Info and Cart */
 .account-info .dropdown-link {
   color: #000;
@@ -100,17 +89,14 @@ body {
   text-decoration: none;
   margin: 0 10px;
 }
-
 .account-info .icon-size {
   margin-right: 5px;
 }
-
 /* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -125,14 +111,12 @@ body {
   top: 25px;
   list-style-type: none;
 }
-.signin-dropdown{
+.signin-dropdown {
   right: -20px !important;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .dropdown-content a {
   color: #000;
   padding: 10px;
@@ -176,30 +160,7 @@ body {
   background-color: #004bb5;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-  .header-section {
-    padding: 15px 20px;
-  }
-  .search-bar,
-  .logo {
-    margin-bottom: 10px;
-  }
-  .account-info {
-    text-align: center;
-  }
-  .account-info .dropdown-link {
-    display: block;
-    margin: 5px 0;
-  }
-}
 
-@media (max-width: 768px) {
-  .dropdown-content {
-    width: 100%;
-    right: 0;
-  }
-}
 
 /* Navbar start */
 
@@ -240,13 +201,13 @@ body {
   padding: 10px 5px;
   display: block;
 }
-.nav-dropdown-content{
+.nav-dropdown-content {
   clip-path: inset(0 0 100% 0); /* Initially hidden */
   transform: translateY(-10px); /* Slightly above */
   opacity: 0;
   transition: clip-path 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
 }
-.nav-item:hover .nav-dropdown-content{
+.nav-item:hover .nav-dropdown-content {
   clip-path: inset(0 0 0 0); /* Fully reveal */
   transform: translateY(0); /* Slide down */
   opacity: 1;
@@ -265,7 +226,6 @@ body {
   top: 33px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
 }
 .occasions-dropdown {
   left: 0px !important;
@@ -497,16 +457,16 @@ body {
 .for-him-right {
   top: -230% !important;
 }
-.for-wedding-right{
-top: -330%;
+.for-wedding-right {
+  top: -330%;
 }
-.for-family-right{
+.for-family-right {
   top: -430%;
 }
-.for-baby-right{
+.for-baby-right {
   top: -530%;
 }
-.for-office-right{
+.for-office-right {
   top: -630%;
 }
 
@@ -754,21 +714,19 @@ top: -330%;
 .body1 {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  height: 523px;
+  width: 100%;
+  max-width: 1200px; 
+  height: auto; 
   position: relative;
   background-color: #fff;
-  top: 0;
   margin-top: 10px;
 }
 .body1 img {
-  position: absolute;
-  width: 1200px;
-  height: 523px;
-  top: 0;
-  left: 0;
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
+
 /* body1 end */
 
 /* body2 start */
@@ -785,6 +743,8 @@ top: -330%;
   font: 100 28px "Red Hat Display", sans-serif;
   text-transform: uppercase;
   margin: 20px 0px;
+  font-size: clamp(18px, 4vw, 28px);
+
 }
 .body2 h2 strong {
   font-weight: 600;
@@ -794,6 +754,7 @@ top: -330%;
   flex-direction: row;
   list-style-type: none;
   padding: 0;
+  justify-content: center;
 }
 .body2-container ul li {
   padding-right: 14px;
@@ -806,6 +767,7 @@ top: -330%;
 }
 .body2-container ul li a img {
   width: 100%;
+  height: auto;
 }
 .body2-container ul li a p {
   text-transform: uppercase;
@@ -836,13 +798,15 @@ top: -330%;
 }
 
 .body3-inner-container ul li p.body3-title {
-  font: 100 28px "Red Hat Display", sans-serif;
+  font: 100 2.5vw "Red Hat Display", sans-serif;
+  /* font-size: 28px; */
   color: #000000;
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
   position: absolute;
-  left: 180px;
+  left: 50%; /* Center title horizontally */
+  transform: translateX(-50%); /* Adjust position to center */
   top: 20px;
   margin: 0;
 }
@@ -853,14 +817,15 @@ top: -330%;
   background-color: #003e52;
   color: #ffffff !important;
   border: 1px solid #003e52;
-  width: 218px !important;
+  width: 80%; /* Make button width relative */
+  max-width: 218px; /* Limit maximum width */
   text-transform: uppercase;
-  color: #ffffff;
   text-align: center;
   font: bold 16px "Red Hat Display", sans-serif;
   line-height: 40px;
   position: absolute;
-  left: 180px;
+  left: 50%; /* Center button horizontally */
+  transform: translateX(-50%); /* Adjust position to center */
   top: 70px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
@@ -883,7 +848,7 @@ top: -330%;
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   grid-column-gap: 38px;
 }
 .collection-link {
@@ -911,29 +876,36 @@ top: -330%;
 
 /* Body5 Start */
 .right-wrapper {
-  height: 400px;
+  height: auto;
   margin-bottom: 20px;
   margin-top: 30px;
 }
+
 .flex-column-2 {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  height: auto;
 }
+
 .left-col {
-  flex: 0 0 75%; /* Ensures left column occupies 75% of the container */
-  max-width: 7;
+  flex: 0 0 75%;
+  max-width: 75%; /* Set max-width correctly */
 }
+
 .left-col img {
   width: 100%;
-  height: 400px;
+  height: auto; /* Allow image height to adjust */
 }
+
 .right-col {
   background-color: #69a3b9;
   flex: 0 0 25%;
-  height: 400px;
+  height: auto; /* Remove fixed height */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .holiday-content {
   background-color: #003e52;
   color: #fff;
@@ -942,28 +914,32 @@ top: -330%;
 .holiday-content .content-wrapper p {
   color: #fff;
 }
+
 .right-col a {
   text-decoration: none;
 }
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: inherit;
+  height: 100%; /* Fill available column space */
   text-align: center;
 }
+
 .content-wrapper p {
   color: #000;
   font: 300 28px "Red Hat Display", sans-serif;
   padding: 0;
   margin: 0;
-  text-align: center;
   text-transform: uppercase;
 }
-.content-wrapper p strong{
+
+.content-wrapper p strong {
   font-weight: bold;
 }
+
 .faux-link {
   text-decoration: underline;
   color: #000;
@@ -976,7 +952,8 @@ top: -330%;
 .home-center-container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%; 
 }
 .inner-center-container {
   margin: 20px 0 0 0;
@@ -997,12 +974,15 @@ top: -330%;
   text-align: center;
 }
 .home-center-content {
-  margin: 5px 0 0 0;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line */
+  gap: 12px;
+  justify-content: center; /* Center items within the container */
 }
 .home-center-content ul {
   width: 1200px;
   height: auto;
-  display: grid;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -1011,6 +991,8 @@ top: -330%;
   padding-left: 0;
   gap: 12px;
   grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 .home-center-content ul li {
   width: 230px;
@@ -1054,7 +1036,6 @@ top: -330%;
   font-family: "Red Hat Display", sans-serif, Arial;
   padding: 32px 0 32px 0;
   display: table;
-  width: 1200px;
   margin: 20px 0 0 0;
   margin-bottom: 20px;
 }
@@ -1085,7 +1066,7 @@ top: -330%;
 .shop-occasion-list,
 .shop-recipients-list,
 .shop-products-list {
-  /* flex: 1; */
+  flex: 1;
   padding: 0 20px;
   display: flex;
 }
@@ -1131,6 +1112,7 @@ top: -330%;
 .shop-products-list ul {
   list-style-type: none;
   padding: 0;
+
 }
 
 .shop-occasion-list ul li,
@@ -1233,7 +1215,8 @@ top: -330%;
   border-right: 1px solid #ddd;
 }
 .footer-top-content {
-  height: 85px;
+  /* height: 85px; */
+  height: auto;
 }
 .join {
   display: flex;
@@ -1241,6 +1224,7 @@ top: -330%;
   width: 100% !important;
   text-align: left;
   padding-top: 22px;
+  padding-bottom: 22px;
   position: relative;
   align-items: baseline;
 }
@@ -1292,7 +1276,7 @@ top: -330%;
   width: 100%;
   text-align: center;
   background: #000;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .footer-contain {
   width: 100%;
@@ -1329,7 +1313,7 @@ top: -330%;
 
 /* Footer info  Start */
 .footer-info {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 10px 10px 10px;
@@ -1364,12 +1348,12 @@ top: -330%;
 .footer-icons-container {
   background: #fff;
   width: 100%;
-  height: 53px;
+  height: auto;
   position: relative;
 }
 
 .footer-icons-container-div {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1380,6 +1364,7 @@ top: -330%;
   align-items: center;
   justify-content: space-between;
   min-height: 53px;
+  flex-wrap: wrap;
 }
 
 .footer-icons-container-div ul li {
@@ -1387,7 +1372,7 @@ top: -330%;
   height: 53px;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: calc(100% / 11);
   position: relative;
 }
 
@@ -1433,34 +1418,34 @@ top: -330%;
 /* Footer icons  End */
 
 /* copyright-div start */
-.copyright-div{
+.copyright-div {
   clear: both;
   color: #000000;
   font-size: 11px;
   margin-top: 5px;
   text-align: center;
-  width: 500px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
 }
-.copyright-div a{
+.copyright-div a {
   color: #000;
 }
 
-.mobileview-div{
+.mobileview-div {
   text-align: center;
   line-height: 30px;
   color: #666;
   padding: 0 0 50px 0;
   font-size: 13px;
-  font-family: 'Red Hat Display', sans-serif, Arial;
+  font-family: "Red Hat Display", sans-serif, Arial;
 }
-.mobileview-div a{
+.mobileview-div a {
   text-decoration: none;
   color: #000;
 }
-.mobileview-div a:hover{
+.mobileview-div a:hover {
   text-decoration: underline;
 }
 /* copyright-div end */
