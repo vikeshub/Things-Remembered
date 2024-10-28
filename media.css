@@ -169,6 +169,21 @@ gap: 20px;
   .home-center-content ul {
     justify-content: center;
   }
+  .home-center-content ul li{
+    width: 175px;
+    height: auto;
+  }
+  .product-price{
+    font-size: 18px;
+  }
+}
+@media (max-width: 370px) {
+    .home-center-content ul li{
+        width: 140px;
+      }
+      .product-price{
+        font-size: 14px;
+      }
 }
 @media (max-width: 968px) {
   .home-center-content ul {
@@ -241,3 +256,11 @@ gap: 20px;
     }
   }
   /* Footer Main End */
+
+
+
+  @media (max-width: 768px) {
+    .home-content-social{
+        flex-direction: column;
+    }
+  }
