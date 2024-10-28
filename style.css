@@ -1720,18 +1720,26 @@ body {
   display: flex; /* Align items in a row */
   transition: transform 0.4s ease; /* Smooth transition */
 }
-
+.nav-crousel-ul{
+  overflow-x: auto; /* Enables the horizontal scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  transition: transform 0.5s ease;
+  width: max-content;
+}
 .nav-crousel-ul {
   display: flex;
+  overflow-x: auto; /* Enables horizontal scrollbar */
+  overflow-y: hidden; /* Prevents vertical scrolling */
   margin: 0;
   padding: 0;
   list-style: none; /* Remove bullets */
-  transition: transform 0.4s ease; /* Ensure smooth scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
 }
 
 .inside-ul-li {
   flex: 0 0 auto; /* Prevent items from shrinking */
-  width: 105px; /* Set fixed width for each item */
+  width: 105px; /* Fixed width for each item */
   margin-right: 10px; /* Space between items */
 }
 
@@ -2005,6 +2013,17 @@ button.right {
 .mob-right-btn {
   right: 0;
 }
+.mob-carousel-track {
+  display: flex;
+  overflow-x: auto; /* Enables the horizontal scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  transition: transform 0.5s ease;
+  width: max-content;
+  /* scrollbar-width: thin; For Firefox */
+}
+
+
+
 
 /* Mobile View Header End*/
 
